@@ -1,0 +1,8 @@
+{% extends 'helloGoodbye.html'%}
+{% block sb %}
+{% if cont=='ERROR' %}
+  <h1>I don't know you.</h1>
+{% else %}
+  <h1>Hello, {{cont}}!</h1>
+{% endif %}
+{% endblock %}
