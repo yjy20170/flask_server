@@ -1,8 +1,9 @@
-{% extends 'helloGoodbye.html'%}
-{% block sb %}
+{% extends 'userFrame.html'%}
+{% block content %}
 {% if cont=='ERROR' %}
   <h1>I don't know you.</h1>
 {% else %}
   <h1>Hello, {{cont}}!</h1>
 {% endif %}
+<h2>Goodbye!</h2>
 {% endblock %}
